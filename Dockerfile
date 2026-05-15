@@ -31,4 +31,4 @@ WantedBy=multi-user.target' > /etc/systemd/system/bacnet.service
 RUN systemctl enable bacnet.service
 
 # d2vm requires a root password for the VM
-RUN echo "root:client-pass" | chpasswd
+RUN echo "root:<your desired password>" | chpasswd
